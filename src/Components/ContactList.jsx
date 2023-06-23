@@ -6,7 +6,7 @@ const ContactList = ({ contacts, deleteContact }) => {
       {contacts.map((contact) => (
         <li
           key={contact.id}
-          className="list-group-item d-flex justify-content-between align-items-center w-25 mx-auto"
+          className="list-group-item d-flex justify-content-between align-items-center w-25 mx-auto mb-4"
         >
           <span>{contact.name}</span>
           <span>{contact.phone}</span>

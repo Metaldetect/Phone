@@ -3,10 +3,10 @@ import React from "react";
 const ContactList = ({ contacts, deleteContact }) => {
   return (
     <ul className="list-group">
-      {contacts.map((contact) => (
+      {contacts.map(contact => (
         <li
           key={contact.id}
-          className="list-group-item d-flex justify-content-between align-items-center w-25 mx-auto mb-4"
+          className="list-group-item d-flex align-items-center justify-content-center flex-wrap w-25 mx-auto mb-4 gap-3"
         >
           <span>{contact.name}</span>
           <span>{contact.phone}</span>
